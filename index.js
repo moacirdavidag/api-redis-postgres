@@ -8,6 +8,8 @@ app.get('/', pessoaController.sincronizar);
 
 app.get('/pessoas', pessoaController.getPessoas);
 
+app.get('/pessoas/:email', pessoaController.getPessoas);
+
 app.post('/pessoas', pessoaController.addPessoa);
 
 app.delete('/pessoa/:email', pessoaController.deletarPessoa);
